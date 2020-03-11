@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <center>
+            <h1> "Addition"</h1>
+            <label for="Number 1">Number1:</label><br>
+            <input type="number" id="number1" name="number1"><br>
+            <label for="Number 2">Number2:</label><br>
+            <input type="number" id="number2" name="number2"><br>
+            <button type="submit" id="a" >submit</button><br>
+            <p id="out"></p>
+            </center>
+        </body>
+        <script>
+           
+            function myf()
+            {
+                var num1 =parseInt(document.getElementById("number1").value);
+                var num2 =parseInt(document.getElementById("number2").value);
+                var num3 =num1+num2;
+                                       
+
+                document.getElementById("out").innerHTML="Addition of Two Numbers Give ="+num3;
+            }
+            
+            document.getElementById("a").addEventListener("click",myf);
+
+            
+
+
+
+
+        </script>
+    
+</html>

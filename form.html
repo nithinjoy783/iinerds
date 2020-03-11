@@ -1,0 +1,51 @@
+<html>
+    <head>
+               
+    </head>
+    <body>
+        <center>
+            <!-- <form onsubmit="$event.preventDefault()"> -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="Place">Place:</label><br>
+            <input type="text" id="Place" name="place"><br>
+            <label for="phoneno">Phonenumber:</label><br>
+            <input type="text" id="phoneno" name="phoneno"><br><br>
+            <button type="submit" id="a" onclick=form1() >submit</button><br>
+            <p id="display" > </p>
+          <!-- </form> -->
+        </center>
+        <script>
+            
+
+// let a =document.getElementById("a").addEventListener("click",function(e){
+//         // if(e){
+            
+//         e.preventDefault()
+//         form1();
+//         // }
+//     });
+    
+// }
+// a.onclick
+function form1()
+{
+    // e.preventDefault()
+    
+    
+
+    var name =document.getElementById("name").value;
+    var age =document.getElementById("age").value;
+    var place =document.getElementById("Place").value;
+    var phoneno =document.getElementById("phoneno").value;
+
+    document.getElementById("display").innerHTML="Name of the applicant =\n"+name+"<br/>"+"Age = \n"+age+"<br/>"+"Place =\n"+place+"<br/>"+"Phone no=\n"+phoneno;
+   
+
+}
+
+        </script>
+      </body>
+</html>
